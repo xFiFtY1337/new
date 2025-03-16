@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poziomy rzek</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <section id="header1"><img src="obraz1.png" alt="Mapa Polski"></section>
+        <section id="header2"><h1>Rzeki w województwie dolnośląskim</h1></section>
+    </header>
+    <nav>
+        <form action="poziomRzek.html" method="post">
+            <label class="opcja">
+                <input type="radio" name="stan" id="stan">Wszystkie
+            </label>
+            <label class="opcja">
+                <input type="radio" name="stan" id="stan">Ponad stan ostrzegawczy
+            </label>
+            <label class="opcja">
+                <input type="radio" name="stan" id="stan">Ponad stan alarmowy
+            </label>
+            <button type="submit">Pokaż</button>
+        </form>
+    </nav>
+    <main>
+        <section id="lewy">
+            <h3>Stany na dzień 2022-05-05</h3>
+            <table>
+                <tr>
+                    <th>Wodomierz</th>
+                    <th>Rzeka</th>
+                    <th>Ostrzegawczy</th>
+                    <th>Alarmowy</th>
+                    <th>Aktualny</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <?php
+                ?>
+            </table>
+        </section>
+        <section id="prawy">
+            <h3>Informacje</h3>
+            <ul>
+                <li>Brak ostrzeżeń o burzach z gradem</li>
+                <li>Smog w mieście Wrocław</li>
+                <li>Silny wiatr w Karkonoszach</li>
+            </ul>
+            <h3>Średnie stany wód</h3>
+            <a href="https://komunikaty.pl">Dowiedz się więcej</a>
+            <img id="prawy_obraz" src="obraz2.jpg" alt="rzeka">
+        </section>
+    </main>
+    <footer>Stronę wykonał: 123123131313</footer>    
+</body>
+</html>
